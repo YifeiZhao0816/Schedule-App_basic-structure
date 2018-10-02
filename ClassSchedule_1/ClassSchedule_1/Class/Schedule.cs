@@ -118,7 +118,5 @@ namespace ClassSchedule_1.Class
                     break;
             }
         }
-
-
     }
 }
