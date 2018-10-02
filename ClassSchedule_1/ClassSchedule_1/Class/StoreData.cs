@@ -13,7 +13,8 @@ namespace ClassSchedule_1.Class
     // https://docs.microsoft.com/en-us/windows/uwp/design/app-settings/store-and-retrieve-app-data
     
     
-    // This entire Class is currently not working.
+    // This entire Class is currently not working. SO I commented it out.
+    /*
     static class StoreData
     {
         // save the current date to the localSettings
@@ -59,4 +60,5 @@ namespace ClassSchedule_1.Class
                 return false;
         }
     }
+    */
 }
