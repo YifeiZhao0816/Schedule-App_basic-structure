@@ -1,0 +1,54 @@
+﻿<Page
+    x:Class="ClassSchedule_1.Current"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ClassSchedule_1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:data ="using:ClassSchedule_1.Class"
+    mc:Ignorable="d"
+    Background="WhiteSmoke">
+
+    <Page.Resources>
+        <Style x:Name="Text" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+        </Style>
+        <DataTemplate x:DataType="data:Subject" x:Key="SubjectListTemplate">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{x:Bind subjectName}" Margin="5,0,10,0"/>
+                <TextBlock Grid.Column ="1" Text="{x:Bind beginTime}" Margin="5,0,10,0"/>
+                <TextBlock Grid.Column ="2" Text="{x:Bind endTime}" Margin="5,0,10,0"/>
+            </Grid>
+        </DataTemplate>
+    </Page.Resources>
+
+    <StackPanel>
+        <TextBlock Text="Today is:" HorizontalAlignment="Center"/>
+        <TextBlock Name="DayBlock" Style="{StaticResource Text}"/>
+        <TextBlock Text="Current Block:" HorizontalAlignment="Center"/>
+        <TextBlock Name="ClassBlock" Style="{StaticResource Text}"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel>
+                <TextBlock Text="End Time" HorizontalAlignment="Center"/>
+                <TextBlock Name="EndTimeBlock" Style="{StaticResource Text}"/>
+            </StackPanel>
+            <StackPanel Grid.Column="1">
+                <TextBlock Text="Remain Time" HorizontalAlignment="Center"/>
+                <TextBlock Name="RemainTimeBlock" Style="{StaticResource Text}"/>
+            </StackPanel>
+        </Grid>
+        <Rectangle Height="2" Fill="Orange"/>
+        <ListView ItemsSource="{x:Bind ts}" ItemTemplate="{StaticResource SubjectListTemplate}"/>
+    </StackPanel>
+
+</Page>

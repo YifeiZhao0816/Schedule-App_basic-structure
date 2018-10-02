@@ -1,0 +1,77 @@
+﻿<Page x:ConnectionId='1'
+    x:Class="ClassSchedule_1.ClassSchedule"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ClassSchedule_1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:data="using:ClassSchedule_1.Class"
+    mc:Ignorable="d"
+    Background="WhiteSmoke">
+    
+    <Page.Resources>
+        <DataTemplate x:Key="NameTemplate"                          >
+            <TextBlock x:ConnectionId='4'                            />
+        </DataTemplate>
+        <DataTemplate x:Key="ETimeTemplate"                          >
+            <TextBlock x:ConnectionId='3'                          />
+        </DataTemplate>
+        <DataTemplate x:Key="BTimeTemplate"                          >
+            <TextBlock x:ConnectionId='2'                        />
+        </DataTemplate>
+    </Page.Resources>
+
+
+    <StackPanel>
+        <TextBlock Text="A day" HorizontalAlignment="Center" FontSize="18" Margin="0,10,0,0"/>
+        <Rectangle Height="2" HorizontalAlignment="Stretch" Fill="Orange" />
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <ListBox x:ConnectionId='8' ItemTemplate="{StaticResource NameTemplate}"                                 />
+            <ListBox x:ConnectionId='9' Grid.Column="1" ItemTemplate="{StaticResource BTimeTemplate}"                                 />
+            <ListBox x:ConnectionId='10' Grid.Column="2" ItemTemplate="{StaticResource ETimeTemplate}"                                 />
+        </Grid>
+
+        <TextBlock Text="B day" HorizontalAlignment="Center" FontSize="18" Margin="0,10,0,0"/>
+        <Rectangle Height="2" HorizontalAlignment="Stretch" Fill="BlueViolet" />
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <ListBox x:ConnectionId='5' ItemTemplate="{StaticResource NameTemplate}"                                 />
+            <ListBox x:ConnectionId='6' Grid.Column="1" ItemTemplate="{StaticResource BTimeTemplate}"                                 />
+            <ListBox x:ConnectionId='7' Grid.Column="2" ItemTemplate="{StaticResource ETimeTemplate}"                                 />
+        </Grid>
+    </StackPanel>
+
+    <!--
+    <Grid>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="A day" HorizontalAlignment="Center" FontSize="18"/>
+        <Rectangle Height="2" HorizontalAlignment="Stretch" Fill="Orange" />
+        <ListBox ItemTemplate="{StaticResource NameTemplate}" ItemsSource="{x:Bind Aschedule}"/>
+        <ListBox Grid.Column="1" ItemTemplate="{StaticResource BTimeTemplate}" ItemsSource="{x:Bind Aschedule}"/>
+        <ListBox Grid.Column="2" ItemTemplate="{StaticResource ETimeTemplate}" ItemsSource="{x:Bind Aschedule}"/>
+        <TextBlock Text="B day" HorizontalAlignment="Center" FontSize="18"/>
+        <Rectangle Height="2" HorizontalAlignment="Stretch" Fill="Orange" />
+        <ListBox  ItemTemplate="{StaticResource NameTemplate}" ItemsSource="{x:Bind Bschedule}"/>
+        <ListBox  Grid.Column="1" ItemTemplate="{StaticResource BTimeTemplate}" ItemsSource="{x:Bind Bschedule}"/>
+        <ListBox  Grid.Column="2" ItemTemplate="{StaticResource ETimeTemplate}" ItemsSource="{x:Bind Bschedule}"/>
+    </Grid>
+    -->
+</Page>
+
