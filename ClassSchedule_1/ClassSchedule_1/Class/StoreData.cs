@@ -11,7 +11,9 @@ namespace ClassSchedule_1.Class
     // A custom class that save the data on local machine so that the data will not lose after restarting the app
     // For this part, refer to description of localSettings on Microsoft document:
     // https://docs.microsoft.com/en-us/windows/uwp/design/app-settings/store-and-retrieve-app-data
-
+    
+    
+    // This entire Class is currently not working.
     static class StoreData
     {
         // save the current date to the localSettings
