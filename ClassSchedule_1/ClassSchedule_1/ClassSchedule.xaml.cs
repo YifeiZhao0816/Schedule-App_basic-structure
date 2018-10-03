@@ -31,7 +31,7 @@ namespace ClassSchedule_1
         {
              
             this.InitializeComponent();
-            foreach (Subject item in Schedule.subjects)
+            foreach (Subject item in Schedule.Subjects)
             {
                 if (item.isA)
                     Aschedule.Add(item);

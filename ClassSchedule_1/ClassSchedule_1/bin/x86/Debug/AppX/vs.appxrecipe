@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\zhaoy\source\repos\ClassSchedule_1\ClassSchedule_1\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-10-02T02:39:18.637</Modified>
+      <Modified>2018-10-03T02:48:38.693</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\zhaoy\source\repos\ClassSchedule_1\ClassSchedule_1\bin\x86\Debug\ClassSchedule_1.exe">
       <PackagePath>entrypoint\ClassSchedule_1.exe</PackagePath>
-      <Modified>2018-10-02T02:39:18.313</Modified>
+      <Modified>2018-10-03T02:48:38.426</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -539,23 +539,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\zhaoy\source\repos\ClassSchedule_1\ClassSchedule_1\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2018-10-02T02:39:18.189</Modified>
+      <Modified>2018-10-03T02:48:38.301</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\zhaoy\source\repos\ClassSchedule_1\ClassSchedule_1\bin\x86\Debug\ClassSchedule.xbf">
       <PackagePath>ClassSchedule.xbf</PackagePath>
-      <Modified>2018-10-02T02:39:18.189</Modified>
+      <Modified>2018-10-03T02:48:38.302</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\zhaoy\source\repos\ClassSchedule_1\ClassSchedule_1\bin\x86\Debug\Current.xbf">
       <PackagePath>Current.xbf</PackagePath>
-      <Modified>2018-10-02T02:39:18.190</Modified>
+      <Modified>2018-10-03T02:48:38.302</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\zhaoy\source\repos\ClassSchedule_1\ClassSchedule_1\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2018-10-02T02:39:18.190</Modified>
+      <Modified>2018-10-03T02:48:38.302</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\zhaoy\source\repos\ClassSchedule_1\ClassSchedule_1\bin\x86\Debug\Settings.xbf">
       <PackagePath>Settings.xbf</PackagePath>
-      <Modified>2018-10-02T02:39:18.190</Modified>
+      <Modified>2018-10-03T02:48:38.303</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Windows Kits\10\UnionMetadata\10.0.17134.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -568,7 +568,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\zhaoy\source\repos\ClassSchedule_1\ClassSchedule_1\bin\x86\Debug\Core\ClassSchedule_1.exe">
       <PackagePath>ClassSchedule_1.exe</PackagePath>
-      <Modified>2018-10-02T02:39:18.623</Modified>
+      <Modified>2018-10-03T02:48:38.684</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

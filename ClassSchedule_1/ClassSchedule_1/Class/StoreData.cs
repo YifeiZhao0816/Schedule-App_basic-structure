@@ -11,10 +11,7 @@ namespace ClassSchedule_1.Class
     // A custom class that save the data on local machine so that the data will not lose after restarting the app
     // For this part, refer to description of localSettings on Microsoft document:
     // https://docs.microsoft.com/en-us/windows/uwp/design/app-settings/store-and-retrieve-app-data
-    
-    
-    // This entire Class is currently not working. SO I commented it out.
-    /*
+
     static class StoreData
     {
         // save the current date to the localSettings
@@ -39,7 +36,7 @@ namespace ClassSchedule_1.Class
             CultureInfo culture = new CultureInfo("en-US");
             if (localSettings.Values["Date"] != null)
             {
-                String temp = (String)localSettings.Values["Date"];
+                string temp = (string)localSettings.Values["Date"];
                 DateTime value = DateTime.Parse(temp, culture);
                 return value;
             }
@@ -60,5 +57,4 @@ namespace ClassSchedule_1.Class
                 return false;
         }
     }
-    */
 }

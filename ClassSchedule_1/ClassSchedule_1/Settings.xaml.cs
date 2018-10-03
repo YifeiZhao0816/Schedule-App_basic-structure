@@ -14,19 +14,17 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// https://go.microsoft.com/fwlink/?LinkId=234238 上介绍了“空白页”项模板
+
 
 namespace ClassSchedule_1
 {
-    /// <summary>
-    /// 可用于自身或导航至 Frame 内部的空白页。
-    /// </summary>
+    
     public sealed partial class Settings : Page
     {
         public Settings()
         {
             this.InitializeComponent();
-            switch (Schedule.schoolStatus)
+            switch (Schedule.SchoolStatus)                      // UI operation.
             {
                 case SchoolStatus.THED:
                     ComboBox1.SelectedIndex = 0;
@@ -40,7 +38,7 @@ namespace ClassSchedule_1
                 default:
                     break;
             }
-            if (Schedule.aDay)
+            if (Schedule.IsAday)                                // UI operation
             {
                 ComboBox2.SelectedIndex = 0;
             }
@@ -50,16 +48,16 @@ namespace ClassSchedule_1
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            switch (ComboBox1.SelectedIndex)
+            switch (ComboBox1.SelectedIndex)                    // when one of the ComboBoxItem is selected, (TWo Hour Dissmisal, etc.) reload schedule
             {
                 case 0:
-                    Schedule.schoolStatus = SchoolStatus.THED;
+                    Schedule.SchoolStatus = SchoolStatus.THED;
                     break;
                 case 1:
-                    Schedule.schoolStatus = SchoolStatus.TED;
+                    Schedule.SchoolStatus = SchoolStatus.TED;
                     break;
                 case 2:
-                    Schedule.schoolStatus = SchoolStatus.normal;
+                    Schedule.SchoolStatus = SchoolStatus.normal;
                     break;
                 default:
                     break;
@@ -70,17 +68,17 @@ namespace ClassSchedule_1
 
         private void ComboBox2_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (ComboBox2.SelectedIndex == 0)
+            if (ComboBox2.SelectedIndex == 0)                   // let user set the day type of current day. 
             {
                 StoreData.SaveDate();
                 StoreData.SaveData(true, "DayType");
-                Schedule.aDay = true;
+                Schedule.IsAday = true;
             }
             else
             {
                 StoreData.SaveDate();
                 StoreData.SaveData(false, "DayType");
-                Schedule.aDay = false;
+                Schedule.IsAday = false;
             }
                 
 

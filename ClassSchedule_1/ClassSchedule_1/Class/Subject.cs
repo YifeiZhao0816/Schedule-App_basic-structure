@@ -15,7 +15,7 @@ namespace ClassSchedule_1.Class
         public TimeSpan endTime { get; set; }                        // normal end time
         public TimeSpan period { get; set; }                         // normal period length
 
-        // overload constructor method.
+        // overload constructor method
         public Subject(int block, bool isA, string subjectName, TimeSpan beginTime, TimeSpan endTime, TimeSpan period)
         {
             this.block = block;
